@@ -17,6 +17,10 @@
          under the License.
 -->
 
+## What's different in this clone
+This repo is designed to be used as the reference for my Cordova projects
+* Added a manual override for the notifyEntryStateOnDisplay property
+
 
 ## ![iBeacon Cordova Plugin](http://icons.iconarchive.com/icons/artua/mac/128/Bluetooth-icon.png) Cordova / Phonegap iBeacon plugin
 
