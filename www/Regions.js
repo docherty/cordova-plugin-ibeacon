@@ -61,7 +61,10 @@ Regions.fromJson = function(jsonMap) {
 		var uuid = jsonMap.uuid;
 		var major = jsonMap.major;
 		var minor = jsonMap.minor;
-		region = new BeaconRegion(identifier, uuid, major, minor);
+		// JMD: added manual true parameter to set the notifyEntryStateOnDisplay flag
+		region = new BeaconRegion(identifier, uuid, major, minor, true);
+		//console.log("From constructor 1: "+identifier+", "+uuid+", "+major+", "+minor+", "+true);
+		//console.log("From constructor 2: "+JSON.stringify(region));
 	} else {
 		console.error('Unrecognized Region typeName: ' + typeName);
 	}
